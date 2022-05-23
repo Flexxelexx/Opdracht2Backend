@@ -1,5 +1,6 @@
 public class ApplePieRecipe {
 
+    // object instantiering met namen (beste optie)
     Ingredient boter = new Ingredient(200, "gram", "ongezouten roomboter");
     Ingredient suiker = new Ingredient(200, "gram", "witte bastard suiker");
     Ingredient bakmeel = new Ingredient(400, "gram", "zelfrijzend bakmeel");
@@ -10,6 +11,9 @@ public class ApplePieRecipe {
     Ingredient kristalsuiker = new Ingredient(75, "gram", "kristal suiker");
     Ingredient kaneel = new Ingredient(3, "eetlepels", "kaneel");
     Ingredient paneermeel = new Ingredient(15, "gram", "paneermeel");
+
+
+    // object instantiering met nummers (niet ideaal)
 
 //    Ingredient[0] = new Ingredient(200, "gram", "ongezouten roomboter");
 //    Ingredient[1] = new Ingredient(200, "gram", "witte bastard suiker");
@@ -65,22 +69,26 @@ public class ApplePieRecipe {
     public void printIngredient() {
         System.out.println(boter.getAmount() + " " + boter.getUnit() + " " + boter.getName());
         System.out.println(suiker.getAmount() + " " + suiker.getUnit() + " " + suiker.getName());
+        System.out.println(bakmeel.getAmount() + " " + bakmeel.getUnit() + " " + bakmeel.getName());
+        System.out.println(ei.getAmount() + " " + ei.getUnit() + " " + ei.getName());
+        System.out.println(vanillesuiker.getAmount() + " " + vanillesuiker.getUnit() + " " + vanillesuiker.getName());
+        System.out.println(zout.getAmount() + " " + zout.getUnit() + " " + zout.getName());
+        System.out.println(appels.getAmount() + " " + appels.getUnit() + " " + appels.getName());
+        System.out.println(kristalsuiker.getAmount() + " " + kristalsuiker.getUnit() + " " + kristalsuiker.getName());
+        System.out.println(kaneel.getAmount() + " " + kaneel.getUnit() + " " + kaneel.getName());
+        System.out.println(paneermeel.getAmount() + " " + paneermeel.getUnit() + " " + paneermeel.getName());
     }
 
-
-//    @Override
-//    public static String toString() {
-//        verwarmOven();
-//        klopEi();
-//        mengAlles();
-//        schilAppels();
-//        vetSpringvorm();
-//        vulEneHelft();
-//        vulAndereHelft();
-//        rolEnSnij();
-//        decoreerTaart();
-//        bakTaart();
-//        return toString();
-//    }
-
+    public void printSteps() {
+        verwarmOven();
+        klopEi();
+        mengAlles();
+        schilAppels();
+        vetSpringvorm();
+        vulEneHelft();
+        vulAndereHelft();
+        rolEnSnij();
+        decoreerTaart();
+        bakTaart();
+    }
 }
